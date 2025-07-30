@@ -16,6 +16,7 @@ make clean
 ``` 
 each time you edit the code
 
+---
 
 ## 🔧 Built-in Commands Supported
 
