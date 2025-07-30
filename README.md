@@ -31,9 +31,14 @@ each time you edit the code
 | `setenv`   | Add a new environment variable using `setenv KEY=VALUE`. Silent on success. Use `env` to verify. |
 | `unsetenv` | Remove an environment variable using `unset KEY`. No effect if the variable doesn't exist. |
 
+Note:
+- for cd, we do cd <file/directory>
+- for usage, we do usage <command>
+- It is important NOT to attempt to remove an environmental variable by directly modifying the environ global variable or the strings to which it points. The correct way to modify the environment is through the use of functions like setenv(), unsetenv() and putenv().
+
 ---
 
-### ⚙️ System Utilities
+### ⚙️ System Programs
 
 | Command    | Description                                                                 |
 |------------|-----------------------------------------------------------------------------|
@@ -44,6 +49,13 @@ each time you edit the code
 | `find`     | Search for files in a specified directory.                                  |
 | `ld`       | List the contents of the current directory.                                 |
 | `ldr`      | Recursively list contents of the current directory and its subdirectories.  |
+
+
+Note:
+- Daemon processes are background services that start at boot time or when needed, running continuously to perform or manage system tasks and services without direct user interaction.
+- Backup directory must be set by the shell before calling backup
+  - setenv BACKUP_DIR=./[WHAT YOU WANT TO ZIP]
+  - e.g. setenv BACKUP_DIR=./files
 
 ---
 
