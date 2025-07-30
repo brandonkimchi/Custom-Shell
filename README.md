@@ -85,6 +85,3 @@ each time you edit the code
 
 ---
 
-## 📄 License
-
-MIT License © brandonkimchi
