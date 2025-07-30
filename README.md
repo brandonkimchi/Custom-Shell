@@ -4,6 +4,19 @@ CSEShell is a lightweight and user-friendly shell built in C that supports usefu
 
 ---
 
+# How to compile and run our shell
+```bash
+make
+./cseshell
+```
+
+Note:
+```bash
+make clean
+``` 
+each time you edit the code
+
+
 ## 🔧 Built-in Commands Supported
 
 ### 🛠 Shell-specific Commands
@@ -35,52 +48,42 @@ CSEShell is a lightweight and user-friendly shell built in C that supports usefu
 
 ## ✨ Additional Features
 
-- 🧭 Displays current user, date, time, and current working directory in the shell prompt.
-- 📊 Displays resource usage statistics (CPU time, memory usage, and disk I/O) after each external command.
-- 🧼 Simple and readable interface.
-- 🧠 Designed to resemble a full-featured yet minimal shell environment.
-- 💬 Includes visual feedback and informative messages for each command.
+- 🧭 **Decorated Prompt**: The prompt includes the current user, path, and time—styled in a cyberpunk theme using neon pink, purple, and cyan.
+- 🌟 **Personal Touch**: A cute symbol `⋆.ೃ࿔*:･` follows the username for added flair!
+- 🎨 **Randomized Input Colors**: Every user input appears in a random color to add visual variety.
+- 💬 **Style Toggle for Prompt**: Users can switch the prompt text style between:
+  - `style dim` → for privacy or reduced visual intensity  
+  - `style normal` → default view  
+  - `style bold` → improved visibility for users with visual impairments
 
 ---
 
 ## 🖼 Shell Preview
 
-> _Add a screenshot or GIF of CSEShell in action here if available._
+<img width="1205" height="490" alt="Screenshot 2025-07-30 224404" src="https://github.com/user-attachments/assets/5aee768d-1382-422f-9ed1-f828906b1a1c" />
 
 ---
 
 ## 🌱 Sustainability and Inclusivity
 
-### ✅ Sustainability: Lightweight System Programs
+### 🌱 Sustainability
 
-CSEShell emphasizes resource efficiency by implementing lightweight versions of common system tools:
-
-- The `sys` command is a minimal alternative to heavier tools like `neofetch`, designed to quickly display essential system information without unnecessary overhead.
-- All custom utilities (e.g., `usage`, `dcheck`, `backup`) are built to execute quickly and with minimal memory and CPU usage.
-- CSEShell displays real-time resource usage statistics (such as CPU time, memory consumption, and disk I/O) after running external commands. This empowers users to make informed decisions about how their commands affect system performance and supports mindful computing.
-
-> This promotes longer battery life on laptops and better performance on resource-constrained systems, aligning with green computing principles.
+- 🧠 To promote energy-conscious computing, CSEShell shows **CPU runtime, memory usage, and disk I/O** after each command.
+- ⚙️ This is implemented using `getrusage()`, which tracks system resource usage in both user and kernel space.
+- 📉 By exposing these metrics, users are empowered to monitor the impact of their commands and make informed decisions—especially valuable for low-power or battery-constrained devices.
 
 ---
 
-### 🌍 Inclusivity: Clear and Friendly User Experience
+### 🌍 Inclusivity
 
-CSEShell was developed with inclusivity in mind through:
-
-- 💬 **Inclusive Error Messaging**: All error messages use plain, user-friendly language with actionable tips (e.g., "Command not found. Type `help` to see available commands.").
-- 📖 **Beginner Support**: The `help` and `usage` commands offer accessible documentation for all built-in commands, making the shell easy to learn for newcomers.
-- 🌐 **Minimal Technical Jargon**: Output messages, command syntax, and feedback are approachable to users from diverse technical backgrounds.
-
-> By prioritizing both performance and accessibility, CSEShell aims to provide a productive environment for all users.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests to improve the shell, add features, or fix bugs.
+- 💡 While changing font size was not feasible in a terminal environment, CSEShell supports **text style customization** for the prompt:
+  - `style dim` → ideal for private, low-contrast environments  
+  - `style normal` → clean, standard appearance  
+  - `style bold` → improves legibility for users with visual impairments
+- 🗣️ These settings help cater to diverse visual preferences and enhance accessibility for all users.
 
 ---
 
 ## 📄 License
 
-MIT License © [Your Name or Team Name]
+MIT License © brandonkimchi
