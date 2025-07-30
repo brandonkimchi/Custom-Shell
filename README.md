@@ -1,6 +1,6 @@
 # 🐚 CSEShell — Custom Shell Environment
 
-CSEShell is a lightweight and user-friendly shell built in C that supports useful built-in commands, additional system utilities, and quality-of-life enhancements to improve user experience.
+CSEShell is a lightweight and user-friendly shell built in C that supports useful built-in commands, additional system utilities, and enhancements to improve user experience.
 
 ---
 
